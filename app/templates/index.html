@@ -1,0 +1,161 @@
+{% load static%}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Fitness - Tu Gimnasio Premium</title>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 50 50">
+                    <circle cx="25" cy="25" r="20" fill="none" stroke="var(--accent-color)" stroke-width="2"/>
+                    <path d="M15 25h20M25 15v20" stroke="var(--accent-color)" stroke-width="2"/>
+                </svg>
+                GymSync
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>TRANSFORMA TU VIDA</h1>
+            <p>Descubre un nuevo nivel de fitness en nuestras instalaciones de primera clase</p>
+            <button class="cta-button">Comenzar Ahora</button>
+        </section>
+
+        <section id="clases" class="classes">
+            <h2>Nuestras Clases</h2>
+            <div class="class-grid">
+                <div class="class-card">
+                    <div class="class-icon">🏋️</div>
+                    <h3>Entrenamiento Funcional</h3>
+                    <p>Mejora tu fuerza y resistencia</p>
+                </div>
+                <div class="class-card">
+                    <div class="class-icon">🧘</div>
+                    <h3>Yoga</h3>
+                    <p>Encuentra tu equilibrio interior</p>
+                </div>
+                <div class="class-card">
+                    <div class="class-icon">🤸</div>
+                    <h3>CrossFit</h3>
+                    <p>Supera tus límites</p>
+                </div>
+                <div class="class-card">
+                    <div class="class-icon">🚴</div>
+                    <h3>Spinning</h3>
+                    <p>Cardio de alto rendimiento</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalaciones" class="facilities">
+            <h2>Instalaciones Premium</h2>
+            <div class="facility-features">
+                <div class="feature">
+                    <h3>Equipamiento Moderno</h3>
+                    <p>La última tecnología en máquinas de ejercicio</p>
+                </div>
+                <div class="feature">
+                    <h3>Área de Peso Libre</h3>
+                    <p>Amplio espacio con pesos y barras</p>
+                </div>
+                <div class="feature">
+                    <h3>Vestuarios de Lujo</h3>
+                    <p>Comodidad y privacidad garantizada</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="pricing">
+            <h2>Planes de Membresía</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <h3>Básico</h3>
+                    <p class="price">$29.99/mes</p>
+                    <ul>
+                        <li>Acceso a sala de máquinas</li>
+                        <li>Vestuarios</li>
+                        <li>Asesoramiento inicial</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="price-card featured">
+                    <h3>Premium</h3>
+                    <p class="price">$49.99/mes</p>
+                    <ul>
+                        <li>Todo lo del plan básico</li>
+                        <li>Clases grupales ilimitadas</li>
+                        <li>Entrenador personal</li>
+                        <li>Acceso a spa</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="price-card">
+                    <h3>Elite</h3>
+                    <p class="price">$79.99/mes</p>
+                    <ul>
+                        <li>Todo lo del plan premium</li>
+                        <li>Nutricionista personal</li>
+                        <li>Acceso 24/7</li>
+                        <li>Invitados gratis</li>
+                    </ul>
+                    <button>Seleccionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contáctanos</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Información</h3>
+                    <p>📍 Calle Principal 123</p>
+                    <p>📞 +1 234 567 890</p>
+                    <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9a0a7afa689aca5a0bdacafa0bda7acbabae7aaa6a4">[email&#160;protected]</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p>Lun-Vie: 6:00 - 22:00</p>
+                <p>Sáb-Dom: 8:00 - 20:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Elite Fitness. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
